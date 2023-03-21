@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table 태그 사용법</title>
+  <style>
+    td, tr {
+     padding: 10px;
+     border-left: 1px solid gray;
+     border-bottom: 1px solid gray;  
+      
+    }
+    #a {
+      margin-top: 10%;
+      margin-left: 25%;
+      text-align: center;
+      width: 50%;
+      height: 50%;
+      border: 1px solid gray;
+      
+    }
+    #b {
+      margin-top: 10%;
+      margin-left: 25%;
+      text-align: center;
+      width: 50%;
+      height: 50%;
+      border: 1px solid gray;
+      border-collapse: collapse;
+    }
+    #c {
+      margin-top: 10%;
+      margin-left: 25%;
+      text-align: center;
+      width: 50%;
+      height: 50%;
+      border: 1px solid gray;
+      border-collapse: separate;
+    }
+    div{
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <table id="a">
+    <!--<caption>1에서 9까지의 숫자들</caption>-->
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <div>첫번째 표를 보면 border-collapse: collapse;가 빠져있다 <br>
+    border-collapse란<br>
+    테이블 셀 테두리가 겹칠 때 한 줄로 겹쳐보이게 할지 두 줄로 보이게 할지 지정하는 것이다. <br>
+    따라서 border-collapse가 없으면 첫번째 테이블 처럼 마지막에 두줄로 남아있게 된다.
+   </div>
+  <table id="b">
+    <tr>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+    </tr>
+  </table> 
+     <div>두번째 표를 보면 border-collapse: collapse;가 존재한다. <br>
+      border-collapse: collapse란<br>
+       테두리를 겹친다는 뜻이다.<br>
+     </div>
+     <table id="c">
+      <!--<caption>1에서 9까지의 숫자들</caption>-->
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+    <div>첫번째 표를 보면 border-collapse: separte;가 존재할때 <br>
+      border-collapse: separate란<br>
+      테두리 겹치지 않는다는 뜻이다. 1번표랑 똑같이 표에 두줄이 그어져있다.
+     </div>
+</body>
+</html>
