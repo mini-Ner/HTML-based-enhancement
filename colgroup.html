@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colgroup</title>
+  <style>
+    table{
+      margin-left: 25%;
+      margin-top: 10%;
+      text-align: center;
+      border-collapse: collapse;
+      
+      width: 50%;
+      height: 50%;
+    }
+    th{
+      text-align: center;
+      border: 1px solid gray;
+      
+      width: 10%;
+    }
+    td{
+      border: 1px solid gray;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <colgroup>
+      <col class="weekend">
+      <col span="5">
+      <col class="weekend">
+    </colgroup>
+    <thead>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+      <th scope="col">목</th>
+      <th scope="col">금</th>
+      <th scope="col">토</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+
+      </tr>
+      <tr>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+
+      </tr>
+      <tr>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+
+      </tr>
+      <tr>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
