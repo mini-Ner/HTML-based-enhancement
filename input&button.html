@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input과 button 사용하기</title>
+  <style>
+    fieldset{
+      margin-left: 35%;
+      width: 30%;
+      font-weight: bold;
+    }
+    #button_1{
+     margin-left: 35%; 
+    }
+  </style>
+</head>
+<body>
+   <from 
+    action="./01-result.html"
+    method="get"
+   >
+   <label for="name">이름</label>
+   <input id="name" name="my-name" type="text">
+
+   <br><br>
+
+   <label for="age">나이</label>
+   <input id="age" name="my-age" type="number">
+   <br><br>
+   <button type="submit">제출</button>
+   <button type="reset">초기화</button>
+   <button type="button">버튼</button>
+  </from>
+  <br><br>
+  <form>
+    <fieldset>
+      <legend>반장</legend>
+      <label for="name_1">이름</label>
+      <input id="name_1" name="name_1" type="text">
+      <br><br>
+      <label for="age_1">나이</label>
+      <input id="age_1" name="age_1" type="number">
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+      <legend>부반장</legend>
+      <label for="name_2">이름</label>
+      <input id="name_2" name="name_2" type="text">
+      <br><br>
+      <label for="age_2">나이</label>
+      <input id="age_2" name="age_2" type="number">
+    </fieldset>
+    <br><br>
+    
+    <fieldset>
+      <legend>학생</legend>
+      <label for="name_3">이름</label>
+      <input id="name_3" name="name_3" type="text">
+      <br><br>
+
+      <label for="age_3">나이</label>
+      <input id="age_3" name="age_3" type="number">
+    </fieldset>
+    <br><br>
+
+    <button id="button_1" type="submit">입력</button>
+    <button id="button_2" type="reset">초기화</button>
+    <button id="button_3" type="button">버튼</button>
+  </form>
+</body>
+</html>
