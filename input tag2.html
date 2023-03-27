@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 요소 공통(대부분) 속성</title>
+</head>
+<body>
+  <h1>input 요소 공통 속성</h1>
+  <form action="#">
+    <label for="val_1">Value</label><br>
+    <input id="val_1" type="text" value="지정됨"><br><br>
+    <mark>Value</mark> 속성 값을 넣으면 내가 쓰지 않아도 입력이 되어 있다.
+    <hr><br>
+    
+    <label for="autofocus_1">autofocus</label><br>
+    <input id="autofocus_1" type="text" placeholder="자동 포커스됨" autofocus>
+    <br>autofocus를 속성을 사용하면 페이지를 새로고침하면 자동으로 해당 창으로 이동하게 된다.
+    <hr><br>
+    <label for="read_1">readonly</label><br>
+    <input id="read_1" type="text" value="읽기만 가능, 전송됨" readonly>
+    <br> readonly는 창에서 수정이 불가능하고 읽기만 가능하다.
+    <hr><br>
+    <label for="required_1">required</label><br>
+    <input id="required_1" type="text" placeholder="필수입력!" required>
+    <br> required는 입력을 안할시 페이지를 넘어갈 수 없다.<br>
+    <button id="bu_re" type="submit">제출</button>
+    <hr><br>
+    <label for="disabled_1">disavled</label><br>
+    <input id="disabled_1" type="text" placeholder="입력불가, 전송 안됨" disabled>
+    <hr><br>
+  </form>
+</body>
+</html>
