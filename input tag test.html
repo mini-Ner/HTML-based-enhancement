@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 응용 테스트</title>
+</head>
+<body>
+  <h1><mark>input</mark>을 이용한 응용 테스트</h1>
+  <hr>
+  <h3>설명</h3>
+  <h3>input 태그와 전에 배웠던 것들을 응용해 만들었습니다.</h3>
+  <hr>
+  <fieldset>
+  <legend>Value</legend>
+  <label for="val_A">지정됨</label>
+  <input id="val_A" type="text" value="지정됨"><br><br>
+  <button id="bu_1" type="submit">제출</button>
+  <button id="bu_2" type="reset">초기화</button>
+  </fieldset><br><br>
+
+  <fieldset>
+    <legend>autofocus</legend>
+    <label for="auto_A">자동으로 지정됨</label>
+    <input id="auto_A" type="text" placeholder="자동으로지정됨" autofocus><br><br>
+    <button id="bu_3" type="submit">제출</button>
+    <button id="bu_4" type="reset">초기화</button>
+  </fieldset><br><br>
+
+  <fieldset>
+    <legend>readonly</legend>
+    <label for="read_A">읽기만 가능</label>
+    <input id="read_A" type="text" value="읽기만 가능하다." readonly>
+  </fieldset><br><br>
+
+  <fieldset>
+    <legend>disabled</legend>
+    <label for="disabled_A">회색창과 선택되지 않는다.</label>
+    <input id="disabled_A" type="text" value="선택이 불가능하다" disabled><br><br>
+  </fieldset><br><br>
+
+  <fieldset>
+    <legend>required</legend>
+    <label for="required_A">필수로 등록해야된다.</label>
+    <input id="required_A" type="text" required><br><br>
+    <button id="bu_5" type="submit">제출</button>
+    <button id="bu_6" type="reset">초기화</button>
+  </fieldset><br><br>
+  
+  <fieldset>
+  <legend>check</legend>
+  <label for="check_1">check_1</label>
+  <input id="check_1" type="checkbox" name="check_1" checked><br>
+  <label for="check_2">check_2</label>
+  <input id="check_2" type="checkbox" name="check_1">
+  </fieldset>
+  <br><br>
+  <fieldset>
+  <legend>radio</legend>
+  <label for="radio_1">radio_1</label>
+  <input id="radio_1" type="radio" name="radio_A" value="rad_1" checked>
+
+  <label for="radio_2">radio_2</label>
+  <input id="radio_2" type="radio" name="radio_A" value="rad_2">
+
+  <label for="radio_3">radio_3</label>
+  <input id="radio_3" type="radio" name="radio_A" value="rad_3">
+  </fieldset>
+</body>
+</html>
