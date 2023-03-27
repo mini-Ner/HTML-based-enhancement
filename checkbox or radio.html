@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox & radio 사용하기</title>
+</head>
+<body>
+  <form action="#">
+    <h1>input 속성 사용법 </h1><hr>
+    <h2>checkbox 사용법</h2>
+    <label for="checkbox_1">A</label>
+      <input id="checkbox_1" type="checkbox"> <br>
+      <label for="checkbox_2">B</label>
+      <input id="checkbox_2" type="checkbox"> <br>
+    <label for="checkbox_3">C</label>
+    <input id="checkbox_3" type="checkbox">
+    <hr>
+    <h2>radio 사용법</h2>
+    <h3>순서 선택</h3>
+    <label for="radio_1">A</label>
+    <input id="radio_1" type="radio" name="numbers" value="ra_1" checked>
+    
+    <label for="radio_2">B</label>
+    <input id="radio_2" type="radio" name="numbers" value="ra_2">
+
+    <label for="radio_3">C</label>
+    <input id="radio_3" type="radio" name="numbers" value="ra_3">
+  </form>
+  <hr>
+  <form action="#">
+    <input id="file_1" type="file" accept="image/*" multiple><br><br>
+    <button id="bu_1" type="submit">제출</button>
+    <button id="bu_r" type="reset">초기화</button>
+    <div>이미지 파일 전체만 다 가능합니다. exe 파일등은 첨부가 안됩니다.</div>
+  </form><br><hr><br>
+  <form action="#">
+    <input id="file_2" type="file" multiple><br><br>
+    <button id="bu_2" type="submit">제출</button>
+    <button id="bu_r" type="reset">초기화</button>
+    <div>반대로 accept가 빠진 파일 첨부는 모든 파일이 다 가능합니다.</div>
+  </form><hr><br>
+  <form action="">
+    <label for="email_1">이메일</label>
+    <input id="email_1" type="email">
+    <button id="bu_e" type="submit">제출</button>
+  </form>
+</body>
+</html>
