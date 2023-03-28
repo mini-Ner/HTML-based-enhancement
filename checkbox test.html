@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox test</title>
+</head>
+<body>
+  <br>
+  <form action="#">
+    <label for="file_A">파일 제출 및 이미지 제출</label><br><br>
+    전체 파일 등록 &nbsp;<input id="file_A" type="file" multiple><br><br>
+    이미지 파일만 등록 &nbsp;<input id="file_A" type="file" accept="image/*" multiple>
+  <hr>
+  <br>
+  <label for="email_A">이메일 제출</label><br><br>
+    <input id="email_A" type="email"><br><br>
+    <button id="bu_A" type="submit">제출</button>
+    <button id="bu_B" type="reset">초기화</button>
+  </form><hr>
+  <br>
+  <fieldset>
+    <legend>음량 조절</legend>
+    <label for="range_A">range</label>
+    <input id="range_A" type="range" min="0" max="100" step="15" >
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>달력 보기</legend>
+    <label for="date_A">Date</label><br>
+    <input id="date_A" type="date" min="2022-01-01" max="2023-12-31">
+  </fieldset>
+</body>
+</html>
